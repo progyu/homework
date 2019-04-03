@@ -124,8 +124,11 @@ a {
     padding-top: 10px;
 }
 
-button.language {
+select.language {
     order: 1;
+    border-radius: 40px;
+    outline: none;
+    padding-left: 10px;
 }
 
 .logo {
@@ -154,16 +157,23 @@ button.language {
     position: absolute;
     text-align: center;
     color: white;
-    top:275px;
-    left: 525px;
+    top:235px;
+    left: 345px;
 }
 
-/* .slogan,.line_mission{
-    position: absolute;
-    background: red;
-    top:305px;
-    left: 415px;
-} */
+.line_mission {
+    background: transparent;
+    outline: none;
+    color: white;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.slogan {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
 
 /* 뉴스 영역 */
 
@@ -229,6 +239,10 @@ button.language {
 
 .family_site {
     float: right;
+    border-radius: 40px;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .footer_bg {
