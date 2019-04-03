@@ -58,7 +58,7 @@ table {
 
 /* 기본 스타일 */
 html {
-    font-size: 10px;
+    font-size: 14px;
 }
 body {
     font-size: 1.4rem;
@@ -77,29 +77,108 @@ a {
     text-decoration: none;
 }
 
+/* 지정 스타일 */
 .container {
-    background: gray;
-    width: 1200px;
+    /* background: gray; */
+    width: 1280px;
 }
+
+/* header 영역 */
 
 .header {
-    background: yellow;
+    /* background: yellow; */
+    padding: 30px 40px;
 }
 
-.mission_video {
-    background: blue;
-    height: 100px;
+.nav {
+    /* background: powderblue; */
+    display: flex;
+    justify-content: space-between;
 }
+
+.main_menu > a{
+    display:inline-block; 
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.main_menu a:hover {
+    color:greenyellow;
+}
+
+.main_menu a:hover .sub_menu_bg {
+    display: block;
+}
+
+.sub_menu_bg {
+    display: none;
+    position: absolute;
+    top: 110px;
+    padding: 20px;
+    background: gray;
+}
+
+.site_map {
+    padding-left: 350px;
+    padding-top: 10px;
+}
+
+button.language {
+    order: 1;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+/* 비디오 영역 */
+
+/* .mission_video {
+    background: blue;
+    position: relative;
+} */
+
+.introduce_video {
+    width: 1275px;
+    height: 610px;
+}
+
+.slogan_mission {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top:385px;
+    left: 525px;
+}
+
+/* .slogan,.line_mission{
+    position: absolute;
+    background: red;
+    top:305px;
+    left: 415px;
+} */
+
+/* 뉴스 영역 */
 
 .news {
     background: pink;
-    height: 100px;
+    padding: 30px 40px;
 }
+
+/* 메인 정보 영역 */
 
 .main_corp_info {
     background: green;
     height: 100px;
 }
+
+/* 푸터 영역 */
 
 .footer_bg {
     background: indigo;
