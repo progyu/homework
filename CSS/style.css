@@ -80,7 +80,7 @@ a {
 /* 지정 스타일 */
 .container {
     /* background: gray; */
-    width: 1280px;
+    width: 1263px;
 }
 
 /* header 영역 */
@@ -116,6 +116,7 @@ a {
     top: 110px;
     padding: 20px;
     background: gray;
+    z-index: 10;
 }
 
 .site_map {
@@ -139,13 +140,13 @@ button.language {
 
 /* 비디오 영역 */
 
-/* .mission_video {
-    background: blue;
+.mission_video {
+    /* background: blue; */
     position: relative;
-} */
+}
 
 .introduce_video {
-    width: 1275px;
+    width: 1263px;
     height: 610px;
 }
 
@@ -153,7 +154,7 @@ button.language {
     position: absolute;
     text-align: center;
     color: white;
-    top:385px;
+    top:275px;
     left: 525px;
 }
 
@@ -199,14 +200,38 @@ button.language {
 
 /* 메인 정보 영역 */
 
+.info_bg {
+    padding: 30px 40px;
+    background-color: #f9f9f9;
+}
+
 .main_corp_info {
-    background: green;
-    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_corp_info > article {
+    font-size: 1.2rem;
+    width: 220px;
 }
 
 /* 푸터 영역 */
 
+.footer_info > li ,.corp{
+    float:left;
+    padding-right: 20px;
+}
+
+.footer_info li:nth-child(n+2)::before {
+    content: "|";
+    padding-right: 20px;
+}
+
+.family_site {
+    float: right;
+}
+
 .footer_bg {
-    background: indigo;
-    height: 100px;
+    padding: 30px 40px;
+    margin-bottom: 30px;
 }
