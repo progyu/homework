@@ -167,9 +167,35 @@ button.language {
 /* 뉴스 영역 */
 
 .news {
-    background: pink;
+    /* background: pink; */
     padding: 30px 40px;
+    font-size: 1.2rem;
 }
+
+.news01 {
+    float: left;
+    width: 585px;
+}
+.news02 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 550px;
+}
+/* .test {
+    background: yellow;
+} */
+.news li {
+    /* background: yellow; */
+    padding: 10px 0;
+    text-overflow: ellipsis;
+    /* width: 400px; */
+    overflow: hidden;
+    white-space: nowrap;
+} 
+
+
 
 /* 메인 정보 영역 */
 
