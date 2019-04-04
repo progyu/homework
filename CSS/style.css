@@ -79,49 +79,47 @@ a {
 
 /* 지정 스타일 */
 .container {
-    /* background: gray; */
     width: 1263px;
 }
 
 /* header 영역 */
 
 .header {
-    /* background: yellow; */
-    padding: 30px 40px;
+    padding: 0 40px;
+    height: 90px;
+    line-height: 90px;
 }
 
 .nav {
-    /* background: powderblue; */
     display: flex;
     justify-content: space-between;
 }
 
-.main_menu > a{
-    display:inline-block; 
+.main_menu > li{
+    display:inline-block;
+    height: 100%; 
     padding-left: 50px;
-    padding-top: 10px;
 }
 
-.main_menu a:hover {
-    color:greenyellow;
-}
-
-.main_menu a:hover .sub_menu_bg {
+.main_menu > li:hover .sub_menu_bg {
     display: block;
+}
+
+.main_menu > li:hover  {
+    color:red;
 }
 
 .sub_menu_bg {
     display: none;
-    position: absolute;
-    top: 110px;
+    position: fixed;
+    top: 80px;
     padding: 20px;
-    background: gray;
+    background-color: hsla(0,0%,94%,.95);
     z-index: 10;
 }
 
 .site_map {
     padding-left: 350px;
-    padding-top: 10px;
 }
 
 select.language {
@@ -132,7 +130,9 @@ select.language {
 }
 
 .logo {
-    padding-top: 5px;
+    color: #00b900;
+    font-size: 2.2rem;
+    font-weight: 900;
 }
 
 
@@ -144,7 +144,6 @@ select.language {
 /* 비디오 영역 */
 
 .mission_video {
-    /* background: blue; */
     position: relative;
 }
 
@@ -174,6 +173,10 @@ select.language {
     font-weight: 700;
 }
 
+iframe {
+    border: none;
+}
+
 
 /* 뉴스 영역 */
 
@@ -194,9 +197,8 @@ select.language {
     white-space: nowrap;
     width: 550px;
 }
-/* .test {
-    background: yellow;
-} */
+
+
 .news li {
     /* background: yellow; */
     padding: 10px 0;
