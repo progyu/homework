@@ -1,4 +1,5 @@
 # homework
+### 20190407 과제 [html semantic markup 결과물 링크](https://progyu.github.io/homework/0407_homework.html)
 김데레사 강사님 HTML,CSS 훈련과제
 [LINE Plus Coporation](https://linepluscorp.com/) 웹페이지 **마크업 및 CSS 적용**
 - Semantic(웹페이지의 의미에 맞게 HTML을 구성) 하려다 보니 어떤 요소의 어떤 태그를 사용해야할지 많은 고민이 되었다.
