@@ -20,7 +20,7 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="icon-"]:before, [class*=" icon-"]:before,[class^="icon-"]:after, [class*=" icon-"]:after {
   font-family: 'fontello';
   font-weight: normal;
   speak: none;
@@ -59,3 +59,4 @@
 .icon-search:before { content: '\e802'; } /* '' */
 .icon-right-open:before { content: '\e803'; } /* '' */
 .icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-angle-down::after { content: '\f107'; } /* '' */
