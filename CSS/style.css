@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* 웹폰트는 가장 먼저 선언하는 것을 권장 */
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
+@import url("./fontello.css");
 /* 크로스 브라우징 */
 @import url("./normalize.css");
 

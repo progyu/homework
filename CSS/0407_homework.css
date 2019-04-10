@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* 웹폰트는 가장 먼저 선언하는 것을 권장 */
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
+@import url("./fontello.css");
+/* 크로스 브라우징 */
+@import url("./normalize.css");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
+/* 기본 스타일 */
+html {
+    font-size: 14px;
+}
+body {
+    font-size: 1.4rem;
+    /* serif : 삐침이 있는 글꼴. sans-serif : 깔끔한 글꼴
+    Noto sans == spoqa han sans(본고딕) 폰트는 크로스 브라우징 이슈가 생길 수 있다.
+    */
+    font-weight: 400;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    background: #fff;
+    color:#181818;
+}
+
+/* 링크 스타일 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 플로트 이슈를 해결하기 위한  CSS 모듈 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* 숨긴 콘텐츠 */
+.readable-hidden, legend{
+    /* display: none;  보조 기기로도 접근이 불가하다.*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    /* 요소 박스의 특정 영역만 나타나도록 지정하는 속성 */
+    clip: rect(0 0 0 0);
+    /* left: -9999em; */
+    /* opacity: 0; */
+}
+
+
+
+
+
+/* header 영역 */
+.header {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background-color: violet;
+    padding: 0 70px 0 70px;
+    position: relative;
+    background-color: yellowgreen;
+}
+
+.logo {
+    background: yellow;
+    font-size: 2rem;
+    color: #00B900;
+    font-weight: 900;
+    margin-right: 100px;
+}
+
+.language {
+    display: none;
+}
+
+.sub_title {
+    position: relative;
+    background-color: violet;
+}
+
+.sub_menu {
+    position: absolute;
+    background-color: aqua;
+    line-height: 2rem;
+    display: none;
+    width: 100vw;
+}
+
+.logo, .navigation {
+    float: left;
+}
+
+.btn_wrapper {
+    float:right;
+    background-color: tomato;
+}
+
+.select_language {
+    border-radius: 20px;
+    padding: 10px 20px 15px 20px;
+    color:#909090;
+    background-color: #fff;
+}
+
+.main_menu > li {
+    float: left;
+    background-color: teal;
+    padding-left: 50px;
+}
+
+.main_menu > li > a:hover {
+    color:#00B900;
+}
+
+.site_map {
+    margin-left: 250px;
+    color:#909090;
+}
+
+ .site_map a:hover {
+    color:#909090 !important;
+}
+
+.navigation {
+    background-color: blue;
+    /* width: 700px; */
+}
+
+.main_menu {
+    background-color: red;
+}
+
+.language > li {
+    line-height: 2rem;
+}
+
+.sub_menu ul {
+    display: none;
+}
+
+.menu_act {
+    display: block;
+}
+
+.wrapper{
+    width:1150px;
+    height: 90px;
+    background-color: black;
+}
+
+.sub_menu > li {
+    float: left;
+    padding-right: 20px;                  
+}

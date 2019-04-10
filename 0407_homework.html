@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Line_markup</title>
+    <link rel="stylesheet" href="CSS/0407_homework.css">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/0407_homework.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header clearfix">
+        <div class="wrapper clearfix">
         <h1 class="logo">
             <a href="#">LINE</a>
         </h1>
-        <div>
-            <button aria-label="언어선택">한국어</button>
+        <div class="btn_wrapper">
+            <button aria-label="언어선택" class="select_language">한국어</button>
             <ul class="language">
                 <li><a href="#">한국어</a></li>
                 <li><a href="#">English</a></li>
@@ -23,9 +27,9 @@
             </ul>
         </div>
         <nav class="navigation">
-            <ul class="main_menu">
-                <li><a href="#">회사소개</a>
-                    <ul>
+            <ul class="main_menu clearfix">
+                <li><a href="#" class="sub_title">회사소개</a>
+                    <ul class="sub_menu menu_act clearfix">
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">LINE's Mission</a>
                             <ul>
@@ -40,29 +44,30 @@
                     </ul>
                 </li>
                 <li><a href="#">사업</a>
-                    <ul>
+                    <ul class="sub_menu">
                         <li><a href="#">서비스</a></li>
                         <li><a href="#">캐릭터 사업</a></li>
                     </ul>
                 </li>
                 <li><a href="#">홍보</a>
-                    <ul>
+                    <ul class="sub_menu">
                         <li><a href="#">Global News</a></li>
                         <li><a href="#">기사 및 보도자료</a></li>
                         <li><a href="#">Blog & SNS</a></li>
                     </ul>
                 </li>
                 <li><a href="#">채용</a>
-                    <ul>
+                    <ul class="sub_menu">
                         <li><a href="#">일과 사람</a></li>
                         <li><a href="#">채용공고</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="site_map main_txt">
                     <a href="#">SITEMAP</a>
                 </li>
             </ul>
         </nav>
+    </div>
     </header>
     <section class="line_mission_video">
         <h2><a href="" class="line_mission_link">LINE's Mission</a></h2>
